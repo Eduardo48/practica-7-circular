@@ -1,0 +1,17 @@
+#ifndef DNODE_H
+#define DNODE_H
+
+typedef int DATA;
+
+typedef struct _node node;
+
+struct _node{
+    DATA data;
+    node *next;
+};
+
+node *create_node(DATA data);
+void delete_node(node *n);
+
+#endif
+
